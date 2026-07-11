@@ -339,7 +339,7 @@ const modalData = {
   },
   'cert-progfund': {
     icon: 'fas fa-code', title: 'Programming Fundamentals', sub: 'Udacity — Sep 5, 2024',
-    image: 'image/Learn_the_Latest_Tech_Skills;_Advance_Your_Career_Udacity1_page.png',
+    image: 'image/programming.png',
     body: 'Covers the foundational concepts of programming including logic building, algorithm design, and core coding principles applicable across multiple languages.',
     list: [
       { icon: 'fas fa-check', text: 'Variables, data types, and operators' },
