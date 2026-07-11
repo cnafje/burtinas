@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birtukan Bidira Wondimu | IT Student & Aspiring Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Birtukan<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-noise"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-chip"><span class="dot"></span> Available for Opportunities</div>
+        <h1 class="hero-name">
+          Birtukan Bidira
+          <span class="line2">Wondimu</span>
+        </h1>
+        <p class="hero-role"><span id="typed-text"></span><span class="typed-cursor">|</span></p>
+        <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Jimma, Ethiopia</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+          <a href="#about" class="btn btn-outline"><i class="fas fa-user"></i> About Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrap">
+          <div class="avatar-ring-outer"></div>
+          <div class="avatar-ring-inner"></div>
+          <div class="avatar-core">
+            <img src="image/photo_2026-03-23_18-29-28.jpg" alt="Birtukan Bidira Wondimu" class="avatar-photo" />
+          </div>
+          <!-- tech orbit icons -->
+          <div class="orbit-icon orbit-a"><i class="fab fa-html5"></i></div>
+          <div class="orbit-icon orbit-b"><i class="fas fa-database"></i></div>
+          <div class="orbit-icon orbit-c"><i class="fas fa-network-wired"></i></div>
+          <div class="orbit-icon orbit-d"><i class="fab fa-js-square"></i></div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fas fa-code"></i> Developer</div>
+        <div class="floating-badge badge-2"><i class="fas fa-network-wired"></i> Networking</div>
+        <div class="floating-badge badge-3"><i class="fas fa-shield-alt"></i> Security</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section bg-about" id="about">
+    <div class="container">
+      <div class="section-label"><span>Who I Am</span></div>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>I am an Information Technology student at <strong>Jimma University</strong> with a strong interest in technology, problem solving, and digital innovation. I am motivated to learn new skills in software, networking, and computer systems.</p>
+          <p>I am responsible, hardworking, and eager to grow in the IT field. I enjoy taking on challenges that push me to think creatively and develop practical solutions.</p>
+          <div class="about-info">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <a href="https://mail.google.com/mail/?view=cm&to=burtinabi@gmail.com" target="_blank" rel="noopener noreferrer" style="color:var(--text);transition:color 0.3s ease;" onmouseover="this.style.color='var(--primary-light)'" onmouseout="this.style.color='var(--text)'">burtinabi@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone"></i></div>
+              <span>+251 961 933 940</span>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <span>Jimma, Ethiopia</span>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-university"></i></div>
+              <span>Jimma University</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="stat-card">
+            <i class="fas fa-certificate"></i>
+            <h3>7</h3>
+            <p>Certificates</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-language"></i>
+            <h3>3</h3>
+            <p>Languages</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-tools"></i>
+            <h3>8+</h3>
+            <p>Skills</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-heart"></i>
+            <h3>3</h3>
+            <p>Hobbies</p>
+          </div>
+        </div>
+      </div>
+      <div class="extras-grid">
+        <div class="extras-card reveal" data-modal="languages">
+          <h3><i class="fas fa-globe"></i> Languages <i class="fas fa-chevron-right modal-hint"></i></h3>
+          <ul>
+            <li><span>Afaan Oromoo</span><span class="lang-level native">Native</span></li>
+            <li><span>Amharic</span><span class="lang-level fluent">Fluent</span></li>
+            <li><span>English</span><span class="lang-level good">Good</span></li>
+          </ul>
+        </div>
+        <div class="extras-card reveal" data-modal="hobbies">
+          <h3><i class="fas fa-star"></i> Hobbies <i class="fas fa-chevron-right modal-hint"></i></h3>
+          <div class="hobbies">
+            <span class="hobby-tag"><i class="fas fa-book"></i> Reading</span>
+            <span class="hobby-tag"><i class="fas fa-hands-helping"></i> Volunteering</span>
+            <span class="hobby-tag"><i class="fas fa-laptop"></i> Technology</span>
+          </div>
+        </div>
+        <div class="extras-card reveal" data-modal="softskills">
+          <h3><i class="fas fa-users"></i> Soft Skills <i class="fas fa-chevron-right modal-hint"></i></h3>
+          <div class="hobbies">
+            <span class="hobby-tag"><i class="fas fa-comments"></i> Communication</span>
+            <span class="hobby-tag"><i class="fas fa-people-carry"></i> Teamwork</span>
+            <span class="hobby-tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt bg-skills" id="skills">
+    <div class="container">
+      <div class="section-label"><span>What I Know</span></div>
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <p class="section-subtitle">Technologies and tools I work with</p>
+      <div class="skills-grid">
+        <div class="skill-category reveal-left">
+          <h3><i class="fas fa-code"></i> Technical Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-info"><span>HTML</span><span class="skill-pct">90%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--target: 90%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info"><span>CSS</span><span class="skill-pct">90%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--target: 90%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info"><span>JavaScript</span><span class="skill-pct">70%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--target: 70%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info"><span>React</span><span class="skill-pct">75%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--target: 75%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info"><span>Database Fundamentals</span><span class="skill-pct">95%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--target: 95%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info"><span>Basic Networking</span><span class="skill-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--target: 80%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-icons-wrap reveal-right">
+          <h3><i class="fas fa-layer-group"></i> Tools &amp; Technologies</h3>
+          <div class="skill-icons">
+            <div class="skill-icon-card" data-modal="skill-html"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-icon-card" data-modal="skill-css"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-icon-card" data-modal="skill-js"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+            <div class="skill-icon-card" data-modal="skill-react"><i class="fab fa-react"></i><span>React</span></div>
+            <div class="skill-icon-card" data-modal="skill-db"><i class="fas fa-database"></i><span>Database</span></div>
+            <div class="skill-icon-card" data-modal="skill-net"><i class="fas fa-network-wired"></i><span>Networking</span></div>
+            <div class="skill-icon-card" data-modal="skill-office"><i class="fab fa-microsoft"></i><span>MS Office</span></div>
+            <div class="skill-icon-card" data-modal="skill-android"><i class="fab fa-android"></i><span>Android</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section bg-education" id="education">
+    <div class="container">
+      <div class="section-label"><span>My Background</span></div>
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="timeline-place">Jimma University</p>
+              </div>
+            </div>
+            <span class="timeline-date"><i class="fas fa-circle" style="color:var(--accent);font-size:0.5rem"></i> Currently Enrolled</span>
+            <p class="timeline-desc">Studying core IT subjects including software development, networking, database systems, and computer hardware. Actively building practical skills through coursework and self-learning.</p>
+            <div class="timeline-tags">
+              <span>Software Development</span>
+              <span>Networking</span>
+              <span>Database Systems</span>
+              <span>Computer Hardware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section class="section section-alt bg-certs" id="certificates">
+    <div class="container">
+      <div class="section-label"><span>Achievements</span></div>
+      <h2 class="section-title">My <span>Certificates</span></h2>
+      <p class="section-subtitle">Professional certifications earned through dedication and learning</p>
+      <div class="cert-grid">
+        <div class="cert-card reveal" data-modal="cert-hardware">
+          <div class="cert-top">
+            <div class="cert-icon-wrap"><i class="fas fa-microchip"></i></div>
+            <h3>Computer Hardware</h3>
+          </div>
+          <div class="cert-body">
+            <p>Fundamentals of computer hardware components, assembly, troubleshooting, and maintenance.</p>
+            <div class="cert-footer">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Certified</span>
+              <div class="cert-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-modal="cert-cyber">
+          <div class="cert-top">
+            <div class="cert-icon-wrap"><i class="fas fa-shield-alt"></i></div>
+            <h3>Cyber Threat Management</h3>
+          </div>
+          <div class="cert-body">
+            <p>Understanding of cyber threats, risk management strategies, and security frameworks.</p>
+            <div class="cert-footer">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Certified</span>
+              <div class="cert-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-modal="cert-network">
+          <div class="cert-top">
+            <div class="cert-icon-wrap"><i class="fas fa-lock"></i></div>
+            <h3>Network Defense</h3>
+          </div>
+          <div class="cert-body">
+            <p>Skills in defending network infrastructure, intrusion detection, and security protocols.</p>
+            <div class="cert-footer">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Certified</span>
+              <div class="cert-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-modal="cert-android">
+          <div class="cert-top">
+            <div class="cert-icon-wrap"><i class="fab fa-android"></i></div>
+            <h3>Android Developer Fundamentals</h3>
+          </div>
+          <div class="cert-body">
+            <p>Core Android development concepts via Udacity — UI design, activities, and app lifecycle.</p>
+            <div class="cert-footer">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Certified</span>
+              <div class="cert-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-modal="cert-compnet">
+          <div class="cert-top">
+            <div class="cert-icon-wrap"><i class="fas fa-network-wired"></i></div>
+            <h3>Computer Network</h3>
+          </div>
+          <div class="cert-body">
+            <p>Comprehensive study of computer networking principles, protocols, and infrastructure design.</p>
+            <div class="cert-footer">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Certified</span>
+              <div class="cert-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-modal="cert-hcia">
+          <div class="cert-top">
+            <div class="cert-icon-wrap"><i class="fas fa-server"></i></div>
+            <h3>HCIA-Datacom</h3>
+          </div>
+          <div class="cert-body">
+            <p>Huawei Certified ICT Associate in Data Communications — routing, switching, and enterprise networking.</p>
+            <div class="cert-footer">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Certified</span>
+              <div class="cert-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal" data-modal="cert-progfund">
+          <div class="cert-top">
+            <div class="cert-icon-wrap"><i class="fas fa-code"></i></div>
+            <h3>Programming Fundamentals</h3>
+          </div>
+          <div class="cert-body">
+            <p>Core programming concepts including logic, algorithms, data types, control flow, and problem solving.</p>
+            <div class="cert-footer">
+              <span class="cert-badge"><i class="fas fa-check-circle"></i> Certified</span>
+              <div class="cert-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section bg-contact" id="contact">
+    <div class="container">
+      <div class="section-label"><span>Let's Connect</span></div>
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <p class="section-subtitle">Open to opportunities, collaborations, or just a friendly hello</p>
+      <div class="contact-grid">
+        <div class="contact-info-wrap reveal-left">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out through any of the channels below.</p>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <p>Email</p>
+              <a href="mailto:burtinabi@gmail.com">burtinabi@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-text">
+              <p>Phone</p>
+              <a href="tel:+251961933940">+251 961 933 940</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text">
+              <p>Location</p>
+              <span>Jimma, Ethiopia</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="mailto:burtinabi@gmail.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+251961933940" class="social-btn" aria-label="Phone"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">Birtukan<span>.</span></div>
+      <p>Designed &amp; Built by <span class="name">Birtukan Bidira Wondimu</span></p>
+      <p class="footer-sub">IT Student &amp; Aspiring Developer &mdash; Jimma, Ethiopia</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box" id="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
